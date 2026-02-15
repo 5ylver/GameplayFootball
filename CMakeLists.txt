@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.1)
+cmake_minimum_required(VERSION 3.5...3.28)
 
 set(PACKAGE GameplayFootball)
 
@@ -27,6 +27,7 @@ endif(UNIX)
 # SET(CMAKE_C_FLAGS  "${CMAKE_C_FLAGS} -fPIC -O3 -g")
 
 # Find required libraries
+cmake_policy(SET CMP0072 NEW)
 FIND_PACKAGE(OpenGL REQUIRED)
 include_directories(${OPENGL_INCLUDE_DIR})
 
