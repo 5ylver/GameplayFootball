@@ -29,11 +29,12 @@
 #include <boost/thread/condition.hpp>
 #include <boost/signals2.hpp>
 #include <boost/signals2/slot.hpp>
-#include <boost/bind.hpp>
+#include <boost/bind/bind.hpp>
 
 namespace blunted {
 
   using namespace boost;
+  using namespace boost::placeholders;
   typedef float real;
 
 }
